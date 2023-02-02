@@ -2,8 +2,8 @@
 
 {% block content %}
     <div class="only_post">
-        <h4>{{ post.author }}</h4>
+        <h4 class="author"><code>Muallif: {{ post.author }}</code></h4>
         <h2>{{ post.title }}</h2>
-        <h4>{{ post.text }}</h4>
+        <h4 class="text">{{ post.text }}</h4>
     </div>
 {% endblock content %}

@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #999;
+}
+
+
+.header-blog{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 40px;
+}
+
+.header-blog h2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.All_posts{
+    margin: 50px 20px;
+    padding: 20px;
+}
+
+.post{
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    background-color:blueviolet;
+    border-radius: 20px;
+    color: white;
+}
+
+.post h2 a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+    margin-left: 40px;
+    letter-spacing: 1px;
+}
+
+.only_post{
+    background-color: blueviolet;
+    padding: 40px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.only_post .author{
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.only_post h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.only_post .text{
+    margin-top: 30px;
+    margin-left: 40px;
+    font-weight: 300;
+}

@@ -4,7 +4,7 @@
     {% for post in object_list %}
         <div class="post">
             <h2><a href="{% url 'only_post' post.pk %}">{{ post.title }}</a></h2>
-            <p>{{ post.short_info }}</p>
+            <p><code>{{ post.short_info }}</code></p>
         </div>
     {% endfor %}
 {% endblock content %}
