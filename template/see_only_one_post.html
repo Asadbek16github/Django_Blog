@@ -5,5 +5,10 @@
         <h4 class="author"><code>Muallif: {{ post.author }}</code></h4>
         <h2>{{ post.title }}</h2>
         <h4 class="text">{{ post.text }}</h4>
+
+        <div class="update_post">
+            <h4 class="postni_yangilash"><a href="{% url 'update_post' post.pk %}">Postni yangilash</a></h4>
+            <h4 class="delete_post"><a href="{% url 'delete_post_page' post.pk %}">Postni o'chirish</a></h4>
+        </div>
     </div>
 {% endblock content %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Yangi post qo'shish</h2>
+    <form action="" method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <button class="submit_button" type="submit">Yuborish</button>
+    </form>
+{% endblock content %}

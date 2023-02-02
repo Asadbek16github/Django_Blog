@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="tahrirlash">
+        <form action="" method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="update_info">Yangilash</button>
+        </form>
+    </div>
+{% endblock content %}

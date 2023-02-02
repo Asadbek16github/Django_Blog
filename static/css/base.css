@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #999;
+  background-color: bisque;
 }
 
 
@@ -17,6 +17,12 @@ body {
     background-color: blueviolet;
     text-align: center;
     padding: 40px;
+}
+
+.header-blog .add_new_post a{
+    text-decoration: none;
+    color: white;
+    text-align: right;
 }
 
 .header-blog h2 a{
