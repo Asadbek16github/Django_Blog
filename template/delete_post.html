@@ -3,8 +3,11 @@
 {% block content %}
     <div class="Delete_Post_Info">
         <form action="" method="post">{% csrf_token %}
-            <h2>{{ post.title }} : Postni haqiqatdan ha o'chirilsinmi ?</h2>
-            <button type="submit" class="Delete_btn">O'chirish</button>
+            <h2>{{ post.title }} : Postni haqiqatdan ham o'chirilsinmi ?</h2>
+            <div class="confirm_delete">
+                <h4><a href="{% url 'only_post' post.pk %}">Yo'q</a></h4>
+                <button type="submit" class="Delete_btn">O'chirish</button>
+            </div>
         </form>
     </div>
 {% endblock content %}

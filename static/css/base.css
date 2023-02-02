@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: bisque;
+  background-color:darkorange;
 }
 
 
@@ -22,9 +22,10 @@ body {
 .header-blog .add_new_post a{
     text-decoration: none;
     color: white;
+}
+.header-blog .add_new_post{
     text-align: right;
 }
-
 .header-blog h2 a{
     text-decoration: none;
     color: white;
@@ -55,6 +56,12 @@ body {
     letter-spacing: 1px;
 }
 
+
+
+
+/* Boshi: faqat bitta postni to'lim malumotlarini chiqaradigan qisim */
+
+
 .only_post{
     background-color: blueviolet;
     padding: 40px 20px;
@@ -78,4 +85,171 @@ body {
     margin-top: 30px;
     margin-left: 40px;
     font-weight: 300;
+}
+
+/* Oxiri: faqat bitta postni to'lim malumotlarini chiqaradigan qisim */
+
+.update_post{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.update_post h4{
+    border: 2px darkorange solid;
+    margin-left: 50px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.update_post h4:hover{
+    background-color: darkorange;
+}
+
+.update_post h4 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+/*  Boshi:  Yangi post qo'shish qismi */
+
+.create_New_post{
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: 50px 30px;
+    color: white;
+}
+
+.create_New_post h2{
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.create_New_post form label{
+    margin: 10px 40px;
+}
+
+.create_New_post form select,
+.create_New_post form textarea,
+.create_New_post form input {
+    margin: 10px;
+    outline: none;
+    padding: 5px 10px;  
+}
+
+.submit_button{
+    padding: 10px 15px;
+    margin: 30px 50px;
+}
+
+.submit_button:hover{
+    background-color: darkorange;
+    border: darkorange solid;
+    color: white;
+    padding: 10px 15px;
+}
+
+/*  Oxiri:  Yangi post qo'shish qismi */
+
+
+
+/* Boshi: Postni yangilash */
+
+.tahrirlash{
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: 50px 30px;
+    color: white;
+}
+
+.tahrirlash h2{
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.tahrirlash form label{
+    margin: 10px 40px;
+}
+
+.tahrirlash form select,
+.tahrirlash form textarea,
+.tahrirlash form input {
+    margin: 10px;
+    outline: none;
+    padding: 5px 10px;  
+}
+
+.tahrirlash button{
+    padding: 10px 15px;
+    margin: 30px 50px;
+    background-color:blueviolet;
+    color: white;
+    border: darkorange solid;
+    border-radius: 10px;
+}
+
+.tahrirlash button:hover{
+    background-color: darkorange;
+    border: darkorange solid;
+    color: white;
+}
+
+/* Oxiri: Postni yangilash */
+
+
+/* Boshi: Postni o'chirish qismi */
+
+.Delete_Post_Info{
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: 50px 30px;
+    color: white;
+}
+
+.Delete_Post_Info h2{
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.confirm_delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm_delete h4 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+.confirm_delete h4{
+    border: 2px darkorange solid;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.confirm_delete button{
+    background-color: blueviolet;
+    border: 2px darkorange solid;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.confirm_delete h4:hover,
+.confirm_delete button:hover{
+    background-color: darkorange;
 }
