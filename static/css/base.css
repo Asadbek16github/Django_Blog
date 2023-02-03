@@ -143,14 +143,17 @@ body {
 }
 
 .submit_button{
+    background-color: blueviolet;
+    border: darkorange solid;
     padding: 10px 15px;
     margin: 30px 50px;
+    color: white;
+    border-radius: 10px;
 }
 
 .submit_button:hover{
     background-color: darkorange;
     border: darkorange solid;
-    color: white;
     padding: 10px 15px;
 }
 
