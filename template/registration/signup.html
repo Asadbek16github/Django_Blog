@@ -3,9 +3,9 @@
 
 {% block content %}
     <div class="sign_up_page">
+        <h2>Ro'yxatdan o'tish</h2>
         <form method="post">{% csrf_token %}
             {{ form.as_p }}
-
             <button type="submit">Foydalanuvchi qo'shish</button>
         </form>
     </div>

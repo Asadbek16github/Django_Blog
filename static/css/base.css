@@ -12,6 +12,32 @@ body {
   background-color:darkorange;
 }
 
+/* Boshi: header vavigation qismi */
+
+.header-blog .in_site,
+.out_site{
+    text-align: left;
+    color: white
+}
+
+.header-blog .in_site_span a,
+.header-blog span a{
+    color: white;
+    text-decoration: none;
+}
+
+.header-blog .in_site_span,
+.header-blog .out_site_span{
+    border: 2px darkorange solid;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.header-blog .in_site_span:hover,
+.header-blog .out_site_span:hover{
+    background-color: darkorange;
+}
 
 .header-blog{
     background-color: blueviolet;
@@ -33,6 +59,8 @@ body {
     font-size: 40px;
     letter-spacing: 2px;
 }
+
+/* Oxiri: header vavigation qismi */
 
 .All_posts{
     margin: 50px 20px;

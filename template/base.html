@@ -12,14 +12,15 @@
     </head>
     <body>
         <header class="header-blog">
-
             {% if user.is_authenticated %}
                 <div class="in_site">
-                    <span>Xush kelibsiz {{user.username}}</span> // <span><a href="{% url 'logout' %}">Saytdan chiqish</a></span>
+                    <span><code>Xush kelibsiz {{user.username}}</code></span> // 
+                    <span class="in_site_span"><code><a href="{% url 'logout' %}">Saytdan chiqish</a></code></span>
                 </div>
             {% else %}
                 <div class="out_site">
-                    <span><code><a href="{% url 'login' %}">Saytga kirish</a></code></span> // <span><code><a href="{% url 'sign_up_page' %}">Ro'yxatdan o'tish</a></code></span>
+                    <span class="out_site_span"><code><a href="{% url 'login' %}">Saytga kirish</a></code></span> // 
+                    <span class="out_site_span"><code><a href="{% url 'sign_up_page' %}">Ro'yxatdan o'tish</a></code></span>
                 </div>
             {% endif %}
 
