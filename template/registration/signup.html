@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class="sign_up_page">
+        <form method="post">{% csrf_token %}
+            {{ form.as_p }}
+
+            <button type="submit">Foydalanuvchi qo'shish</button>
+        </form>
+    </div>
+{% endblock content %}
