@@ -12,8 +12,22 @@
     </head>
     <body>
         <header class="header-blog">
+
+            {% if user.is_authenticated %}
+                <div class="in_site">
+                    <span>Xush kelibsiz {{user.username}}</span> // <span><a href="{% url 'logout' %}">Saytdan chiqish</a></span>
+                </div>
+            {% else %}
+                <div class="out_site">
+                    <span><code><a href="{% url 'login' %}">Saytga kirish</a></code></span> // <span><code><a href="#">Ro'yxatdan o'tish</a></code></span>
+                </div>
+            {% endif %}
+
             <h2><a href="{% url 'all_post_page' %}">Mrpytass_16 Blog</a></h2>
-            <h4 class="add_new_post"><a href="{% url 'create_post_page' %}"><code>+ Yangi post qo'shish</code></a></h4>
+
+            {% if user.is_authenticated %}
+                <h4 class="add_new_post"><a href="{% url 'create_post_page' %}"><code>+ Yangi post qo'shish</code></a></h4>
+            {% endif %}
         </header>
 
         <div class="All_posts">

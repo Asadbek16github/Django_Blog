@@ -120,3 +120,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
+
+LOGIN_REDIRECT_URL = 'all_post_page'
+LOGOUT_REDIRECT_URL = 'all_post_page'
